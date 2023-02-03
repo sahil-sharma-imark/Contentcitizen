@@ -4,12 +4,9 @@ Advance WordPress Project with With PHP MySql.
 
 ### [Live demo](https://contentcitizen.com/)
 
-![CustomerDev screenshot](https://raw.githubusercontent.com/sahil-sharma-imark/
-Contentcitizen/main/static/image.png)
-![CustomerDev screenshot](https://raw.githubusercontent.com/sahil-sharma-imark/
-Contentcitizen/main/static/image-1.png)
-![CustomerDev screenshot](https://raw.githubusercontent.com/sahil-sharma-imark/
-Contentcitizen/main/static/image-2.png)
+![CustomerDev screenshot](https://raw.githubusercontent.com/sahil-sharma-imark/Contentcitizen/main/static/image.png)
+![CustomerDev screenshot](https://raw.githubusercontent.com/sahil-sharma-imark/Contentcitizen/main/static/image-1.png)
+![CustomerDev screenshot](https://raw.githubusercontent.com/sahil-sharma-imark/Contentcitizen/main/static/image-2.png)
 
 
 === Twenty Twenty ===
