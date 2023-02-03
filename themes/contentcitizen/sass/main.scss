@@ -1,0 +1,41 @@
+/*!
+CSS Document
+Project Name: 
+Project Description:
+Written By: iMark Infotech - Gurinder Singh
+Created On: 22-09-2021
+Last Modified:
+*/
+// Vendors and external stylesheets
+@import "vendors/bootstrap";
+@import "vendors/line-awesome";
+@import "vendors/font-awesome";
+@import "vendors/swiper-slider";
+
+// Sass utilities
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// Base stuffs
+@import "base/reset";
+@import "base/typography";
+
+// Layout related stylesheets
+@import "layout/preloader";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/popup";
+@import "layout/forms";
+@import "layout/style";
+@import "layout/modals";
+
+// Components and modules
+@import "components/buttons";
+
+// Page-specific stylesheets
+@import "pages/index";
+@import "pages/contact";
+@import "pages/content";
+@import "pages/news-and-media";
+@import "pages/news-and-media-detail";

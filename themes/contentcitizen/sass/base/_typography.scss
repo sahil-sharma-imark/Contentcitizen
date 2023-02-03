@@ -1,0 +1,131 @@
+html {
+    font-size: rem(16px);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $FontText;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: rem(16px);
+    color: $cText;
+    background-color: $cPrimary;
+    background-image: url("../images/body-background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+h1 {
+    font-size: rem(50px);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: rem(40px);
+    font-weight: 600;
+    
+    @include breakpoint(largedesktop) {
+        font-size: rem(36px);
+    }
+    
+    @include breakpoint(desktop) {
+        font-size: rem(32px);
+    }
+}
+
+h3 {
+    font-size: rem(35px);
+    font-weight: 500;
+    
+    @include breakpoint(largedesktop) {
+        font-size: rem(32px);
+    }
+    
+    @include breakpoint(desktop) {
+        font-size: rem(28px);
+    }
+}
+
+h4 {
+    font-size: rem(26px);
+    font-weight: 600;
+}
+
+h5 {
+    font-size: rem(22px);
+    font-weight: 400;
+}
+
+h6 {
+    font-size: rem(20px);
+    font-weight: 400;
+}
+
+p {
+    font-size: rem(18px);
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 0;
+    color: $cText;
+
+    @include breakpoint(desktop) {
+        font-size: rem(16px);
+    }
+}
+
+ul {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+
+    li {
+        font-size: rem(18px);
+        font-weight: 400;
+        line-height: 1.7;
+        margin-bottom: 10px;
+        color: $cText;
+
+        @include breakpoint(desktop) {
+            font-size: rem(16px);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+p,
+ul li {
+    strong {
+        font-weight: 600;
+    }
+
+    small {
+        font-size: rem(16px);
+    }
+
+    a {
+        color: $cText;
+
+        i {
+            font-size: rem(24px);
+            position: relative;
+            top: 3px;
+            margin-left: 5px;
+        }
+
+        &:hover,
+        &:focus {
+            color: $cSecondary;
+        }
+    }
+}

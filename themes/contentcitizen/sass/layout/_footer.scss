@@ -1,0 +1,56 @@
+#footer {
+    padding: 16px 0;
+
+    .d-flex {
+        align-items: center;
+
+        p {
+            width: 100%;
+            text-align: center;
+            padding-left: 136px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        ul {
+            display: inline-flex;
+            align-items: center;
+
+            li {
+                margin: 0 8px 0 0;
+                display: flex;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                a {
+                    border-radius: 22px;
+                    border: 1px solid #fff;
+                    height: 28px;
+                    width: 40px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include transition;
+
+                    i {
+                        font-size: rem(18px);
+                        color: $cText;
+                        margin: 0;
+                        top: auto;
+                        @include transition;
+                    }
+
+                    &:hover {
+                        border-color: transparent;
+
+                        i {
+                            color: $cSecondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

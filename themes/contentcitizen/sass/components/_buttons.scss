@@ -1,0 +1,60 @@
+.btn {
+    height: 50px;
+    font-size: rem(20px);
+    padding: 0 40px;
+    border-radius: 0;
+    @include btn(500, uppercase);
+    @include transition;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &.btn-primary {
+        background-color: $cPrimary;
+        border: 1px solid $cPrimary;
+        color: $cWhite;
+
+        &:hover {
+            background-color: $cWhite;
+            border: 1px solid $cPrimary;
+            color: $cPrimary
+        }
+
+        &.br {
+            background-color: transparent;
+            border: 1px solid $cPrimary;
+            color: $cPrimary;
+
+            &:hover {
+                background-color: $cPrimary;
+                color: $cWhite;
+            }
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $cSecondary;
+        border: 1px solid $cSecondary;
+        color: $cWhite;
+
+        &:hover {
+            background-color: $cWhite;
+            border: 1px solid $cSecondary;
+            color: $cSecondary;
+        }
+
+        &.br {
+            background-color: transparent;
+            border: 1px solid $cSecondary;
+            color: $cSecondary;
+
+            &:hover {
+                background-color: $cSecondary;
+                color: $cWhite;
+            }
+        }
+    }
+}

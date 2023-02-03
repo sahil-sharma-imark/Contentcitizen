@@ -1,0 +1,118 @@
+.contact-section {
+    .inner {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 55px 55px 55px 0;
+
+        &:before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 86.2%;
+            border: 1px solid #4b5b63;
+            pointer-events: none;
+
+            @include breakpoint(largedesktop) {
+                width: 84%;
+            }
+
+            @include breakpoint(desktop) {
+                width: 83.7%;
+            }
+        }
+
+        .contact-left {
+            text-align: center;
+            background-color: #1e3642;
+            padding: 60px 30px 70px 30px;
+            position: relative;
+            min-width: 460px;
+            margin: 0 60px 0 0;
+
+            @include breakpoint(largedesktop) {
+                min-width: 410px;
+            }
+
+            @include breakpoint(desktop) {
+                min-width: 360px;
+                margin: 0 50px 0 0;
+            }
+
+            h3 {
+                font-weight: 600;
+                margin: 0 0 20px 0;
+            }
+
+            h5 {
+                font-weight: 300;
+                margin: 0 0 25px 0;
+            }
+
+            p {
+                a {
+                    color: $cSecondary;
+                    text-decoration: underline;
+                }
+            }
+
+            .contact-social {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translate(-50%, 50%);
+
+                li {
+                    margin: 0 10px 0 0;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    a {
+                        display: inline-flex;
+
+                        i {
+                            height: 35px;
+                            width: 35px;
+                            border-radius: 50%;
+                            background-color: $cSecondary;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: rem(24px);
+                            color: $cText;
+                            top: 0;
+
+                            &.la-instagram {
+                                background-color: #fc503e;
+                            }
+
+                            &.la-vimeo-v {
+                                background-color: #1c8be8;
+                            }
+
+                            &.la-linkedin-in {
+                                background-color: #2867b2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-right {
+            width: 100%;
+
+            h4 {
+                font-size: rem(30px);
+                margin-bottom: 40px;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.content-section {
+    p {
+        margin-bottom: 20px;
+
+        @include breakpoint(desktop) {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #05aeed;
+            text-decoration: underline;
+
+            &:hover {
+                color: $cSecondary;
+            }
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    h2 {
+        color: $cSecondary;
+        margin-bottom: 20px;
+        padding-top: 25px;
+
+        @include breakpoint(desktop) {
+            margin-bottom: 15px;
+            padding-top: 20px;
+        }
+
+        &:first-child {
+            padding: 0;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
